@@ -27,6 +27,13 @@ body {
   flex-direction: row;
 }
 
+.logo img {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 150px;
+}
+
 .upload-container {
   background: #ffffff;
   border-radius: 25px;

@@ -1,3 +1,5 @@
+const logo = document.querySelector('.logo');
+
 const dropZone = document.querySelector('.drop-zone');
 const fileInput = document.querySelector('#fileInput');
 const browseBtn = document.querySelector('.browseBtn');
@@ -108,6 +110,7 @@ const onUploadSuccess = ({ file: url }) => {
   console.log(url);
   resetFileInput();
   emailForm[2].removeAttribute('disabled');
+  logo.style.display = 'none';
   progressContainer.style.display = 'none';
   sharingContainer.style.display = 'flex';
   fileURLInput.value = url;
