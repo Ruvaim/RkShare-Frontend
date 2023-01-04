@@ -135,6 +135,7 @@ body {
 .sharing-container {
   width: var(--container-width);
   margin-bottom: 20px;
+  flex-direction: column;
   display: none;
 }
 
@@ -170,6 +171,7 @@ body {
 .email-container {
   display: flex;
   align-items: center;
+  justify-content: center;
 }
 .email-container form {
   width: 100%;
@@ -232,6 +234,18 @@ body {
   background-size: contain;
   height: 50vh;
   width: 50vw;
+}
+
+.footer {
+  text-align: center;
+  position: absolute;
+  bottom: 0px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #03a9f4;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 900px) {
